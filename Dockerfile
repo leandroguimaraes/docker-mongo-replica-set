@@ -1,4 +1,4 @@
-FROM mongo as base
+FROM mongo:6 as base
 
 COPY ./init-mongodbs.sh ./init-replica.sh ./entry-point.sh /
 
